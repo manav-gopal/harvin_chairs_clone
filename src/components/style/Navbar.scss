@@ -1,0 +1,43 @@
+.navbar{
+    position: fixed;
+    height: 8vh;
+    width: 97dvw;
+    margin-top: 20px;
+    z-index: 2;
+    top: 0;
+    color: black;
+    border-radius: 10px;
+    background-color: aliceblue;
+
+    .navbar_wrapper{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1rem;
+
+        .logo{
+            background-image: url('../assets/icons&logo/harvin_chairs_logo.png');
+            background-size: cover;
+            background-position: center;
+            width: 150px;
+            height: calc(100% - 1rem);
+            margin: 1rem;
+        }
+        .links{
+            font-size: .7rem;
+            font-weight: 500;
+            span{
+                margin: 10px;
+            }
+        }
+        .menu{
+            font-size: .8rem;
+            font-weight: 500;
+            span{
+                margin: 10px;
+            }
+        }
+    }
+}

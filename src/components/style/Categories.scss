@@ -1,0 +1,35 @@
+.categories {
+  width: 100dvw;
+  height: 100vh;
+  object-fit: cover;
+  background-size: cover;
+  background-position: bottom;
+  background-color: #477262;
+
+  h1{
+    color: aliceblue;
+    margin: 0;
+    padding: 0;
+    padding: 20px 0;
+  }
+  .items_wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); // 3 columns
+      grid-gap: 40px;
+      column-gap: 100px;
+      margin-top: 20px;
+    }
+  }
+}
+@media (max-width:1025px) {
+    .categories{
+        height: 120vh;
+    }
+}

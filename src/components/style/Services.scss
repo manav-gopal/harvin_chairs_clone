@@ -1,0 +1,64 @@
+.services{
+    width: 100dvw;
+    height: 30vh;
+
+    .services_wrapper{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        .subClients:nth-child(1){
+            .left{
+                span{
+                    filter: invert(black);
+                    svg{
+                        width: 60px;
+                        height: 60px;
+                        fill: #454545;
+                    }
+                }
+            }
+            .right{
+                h5{
+                    content: '100 Day Return';
+                }
+            }
+        }
+        .subClients:nth-child(2){
+            .left{
+                span{
+                    svg{
+                        width: 60px;
+                        height: 60px;
+                        fill: #454545;
+                    }
+                }
+            }
+            .right{
+                h5{
+                    content: '100 Day Return';
+                }
+            }
+        }
+        .subClients:nth-child(3){
+            .left{
+                span{
+                    svg{
+                        width: 60px;
+                        height: 60px;
+                        stroke: #454545;
+                    }
+                }
+            }
+            .right{
+                h5{
+                    content: '100 Day Return';
+                }
+            }
+        }
+    }
+}
