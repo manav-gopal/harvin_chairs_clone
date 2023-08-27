@@ -22,14 +22,27 @@
             box-shadow: 1px 1px 5px 2px grey;
             border-radius: 10px;
             margin: 20px;
-
+            
+            @media (max-width:600px) {
+                margin: 0;
+                height: 80px;
+                padding: 10px;
+                transform: scale(0.7);
+                flex-direction: column;
+                align-items: center;
+            }
+            
             .left{
                 width: 40%;
                 height: 100%;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-
+                @media (max-width:600px) {
+                    margin: 0;
+                    transform: scale(0.7);
+                }
+                
                 span{
                     position: absolute;
                     width: 50px;
@@ -55,12 +68,20 @@
                 *{
                     margin: 0;
                 }
-
+                
                 h5{
                     font-size: 1rem;
+                    @media (max-width:600px) {
+                        text-align: center;
+                        width: 100%;
+                        font-size: .8rem;
+                    }
                 }
                 p{
                     font-size: .7rem;
+                    @media (max-width:600px) {
+                        display: none;
+                    }
                 }
             }
         }

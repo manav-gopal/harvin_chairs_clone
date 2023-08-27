@@ -19,6 +19,16 @@
       grid-gap: 40px;
       column-gap: 100px;
       margin-top: 20px;
+
+      @media (max-width: 600px) {
+        grid-template-columns: repeat(2, 1fr);
+        transform: scale(.5);
+      }
+      
+      @media (max-width: 500px) {
+        grid-template-columns: repeat(2, 1fr);
+        transform: scale(.5);
+      }
     }
   }
 }

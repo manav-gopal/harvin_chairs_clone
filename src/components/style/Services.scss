@@ -2,15 +2,25 @@
     width: 100dvw;
     height: 30vh;
 
+    @media (max-width:600px) {
+        height: 45vh;
+    }
+
     .services_wrapper{
         width: 100%;
         height: 100%;
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
 
+        @media (max-width:600px) {
+            transform: scale(.7) translateY(-10%);
+            flex-wrap: wrap;
+        }
+        @media (min-width:600px) and (max-width:1025px) {
+            transform: scale(.8);
+        }
         .subClients:nth-child(1){
             .left{
                 span{

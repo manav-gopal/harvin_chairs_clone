@@ -6,14 +6,14 @@
   background-size: cover;
   background-position: bottom;
   display: flex;
-
+  
   .img_wrapper {
     display: flex;
     width: 60%;
     height: 100%;
     align-items: center;
     justify-content: center;
-
+    
     .shape {
       position: absolute;
       width: 50%;
@@ -21,12 +21,24 @@
       background-color: #FFE0B4;
       border-radius: 100% 40% 75% 35%;
       rotate: 20deg;
+      
+      @media (max-width:600px) {
+        width: 100%;
+      }
     }
     .img {
       position: relative;
       width: 90%;
       height: 90%;
       background-size: cover;
+      
+      @media (max-width:600px) {
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 100%;
+        transform: scale(1.2);
+      }
     }
   }
   .content > * {
@@ -38,6 +50,14 @@
     align-items: flex-end;
     width: 40%;
     padding: 40px;
+    z-index: 1;
+    
+    @media (max-width:600px) {
+      position: absolute;
+      width: 80%;
+      padding: 20px;
+      transform: translateX(10%);
+    }
   
     h1{
       text-align: right;

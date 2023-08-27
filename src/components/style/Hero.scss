@@ -20,5 +20,8 @@
         span{
             color: orange;
         }
+        @media (max-width:600px) {
+            font-size: 2rem;  
+        }
     }
 }
